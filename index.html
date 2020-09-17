@@ -1,0 +1,378 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="make.css" />
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="swiper.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.svg3dtagcloud.min.js"></script>
+  <script src="js/sphere.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 450px;
+    }
+  </style>
+
+  </head>
+  <body>
+    <!--navigation bar-->
+
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_me">about_me</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#test">TESTIMONIALS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#social">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-----banner section--->
+
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm">
+            <p class="promo-title heading">
+              <span>IMAGINATION </span>is more important than
+              <span>KNOWLEDGE</span>
+            </p>
+            <p class="para">
+              Together we the people achieve more than any single person could
+              ever do alone.
+            </p>
+            <a href="#" class="btn btn-primary">know more about me</a>            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-sm text-center">
+            <img src="images/bg1.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----service section--->
+
+    <section id="about_me">
+      <div class=" text-center container">
+        <h1 class="heading big_txt">ABOUT ME</h1>
+
+        <div class="row">            
+          <div class="col-md-6 col-sm">
+            <p class="promo-title heading">
+                Howdy,I'm<br>
+              <span >PURNIMA SHARMA </span>
+              <h5 class="heading" style="color:rgb(218, 218, 218)">WEB DEVELOPER | AR CREATOR | CODER</h5>
+            </p>
+            <p class="para">
+                I enjoy turning complex problems into simple, beautiful and intutive designs.
+<br>
+                When I'm not coding or pushing pixels,
+                you'll find me cooking, sketching,
+                gardening and listening to music.            </p>
+            <a href="#" class="btn">RESUME</a>
+         
+          </div>
+          <div class="col-md-6 text-center col-sm ">
+            <div class="mypic"></div>
+            <img src="images/Capture.PNG" class=" img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---ABOUT US-->
+    <section id="skills">
+      <div class="container">
+        <h1 class="heading big_txt">SKILLS</h1>
+
+        <div class="row">    
+            <div class="col-md-6">
+              <p class="about-title heading">
+               <span>SOMETIMES</span> we're tested
+                not to show our <span>WEAKNESS</span>
+                but to discover our <span>STRENGTH.</span>
+            </p>
+            <p class="para">The main area of my expertise is web development and augmented reality.
+                HTML,CSS ,JS, building small and medium web apps with react , custom plugins and many more augmented reality skills.</p>
+          </div>
+          <div class="col-md-6  text-center">    
+            <div id="holder"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+<!---projects-->
+<section id="project">
+  <div class="container text-center">
+    <h1 class="heading big_txt">PROJECTS</h1>
+
+    <div class="row">   
+        <p class="heading project-title">DREAM IT<span>.BELIEVE IT.</span>BUILD IT</p>
+       <div class="col-md-12">  
+               <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                    <img src="images/GAME.png"  />
+                </div>
+                <div class="content ">
+                  <h4 class="heading">2D-GAME</h4>
+                  Spacebattle game is build by using unity and C#
+                  language.Our spaceship haS to overcome the obstacles and
+                  also has to destroy opponent's spaceship.<br>
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <img src="images/ar-portals.jpg" />
+                </div>
+                <div class="content">
+                  <h4 class="heading">360 AR-PORTAL</h4>
+                  AR-Portal is build by using unity and AR-Core SDK.Now
+                  you'll experience the beach view at home only.<br>
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <img src="images/bake.PNG" />
+                </div>
+                <div class="content">
+                  <h4 class="heading">Front end website</h4>
+                  Bakery website build by using html,css,js and bootstrap.
+                  It's a reasponsive site.Slider view you'll see inside
+                  the website.<br>
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <img src="images/trav.PNG" />
+                </div>
+                <div class="content">
+                  <h4 class="heading">Front end website</h4>
+                  Travel website build by using html,css and js. You'll
+                  find video on the background.Flip cover using JS.<br>
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <img src="images/portal-augmented-reality-1024x664.webp" />
+                </div>
+                <div class="content">
+                  <h4 class="heading">AR-Portal</h4>
+                  AR-Portal is build by using Unity and AR-Core.AR-Portal
+                  allow you to place a portal in the shape of a door or
+                  window, which when walked through the room. <br />
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="sliderText">
+                  <img src="images/maxresdefault.jpg" />
+                </div>
+                <div class="content">
+                  <h4 class="heading">AR-CASCA</h4>
+                  AR-Car showroom demonstrated how a customer can have a
+                  look at the car model he is interested in, choose
+                  between various colour options and used voice commands
+                  for instructions.<br>
+                  <a href="#" class="btn">Source</a>
+                  <a href="#" class="btn">View</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----EXPERIENCE--->
+    <section id="experience">
+      <div class="container ">
+        <h1 class="heading big_txt">EXPERIENCE</h1>
+        <p class="exp-title heading">
+         <span>SUCESS </span>doesn't just find <span>YOU</span>,<br>
+         <span>YOU</span> have to go out and get it.       </p>
+
+        <div class="row">    
+ <div class="col-md-4 text-center">
+<div class="circle">
+  <h4 class="heading big_txt">JUNE 2020</h4>
+  <p class="comp heading">Great Learning<br><span>CAMPUS HERO</span></p>
+</div>
+</div>   <div class="col-md-4 text-center">
+  <div class="circle"> 
+     <h4 class="heading big_txt text-center">JULY 2020</h4>
+     <p class="comp heading">Girlscript<br> <span>CAMPUS HERO</span></p>
+
+  </div>
+</div>      
+      <div class="col-md-4">    
+
+  <img src="images/5e738425d5e3aecf3c1c3ec3_Series of images 1.png" class="mysearch"> <p class="heading" style="text-align:center;color:var(--purple)">MORE TO COME</p>
+</div>  
+      </div>
+    </div>
+    </section>
+
+
+    <!---FOOTEER------>
+    <section id="footer">
+      <div class="container">
+        <h1 class="heading big_txt">CONTACT ME</h1>
+        <div class="row">      
+          <div class="col-md-6">
+            <p class="heading last-text">
+              If Not Now, When? <br>
+            <span>Let’s Work Together!  </span>     </p>
+    
+            <p>
+              <div class="social-icons">
+     <a href="www.facebook.com"> <img src="images/fb.png"class="social"></a>
+     <a href="www.facebook.com">   <img src="images/inst.png"class="social"></a>
+      <a href="www.facebook.com">  <img src="images/Group 21.png"class="social"></a>
+        <a href="www.facebook.com"> <img src="images/Group 22.png"class="social"></a>
+          <a href="www.facebook.com"> <img src="images/Group 23.png"class="social"></a>
+        </div>
+</p>
+    
+    
+<hr />
+<p class="copyright heading">Created by Purnima Sharma ❤</p>
+    </div>
+          <div class="col-md-6">
+            <img src="images/2757.png">
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+    <!----scrolling--->
+   <!--- <script src="smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+
+    </script>--->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var preloader = document.getElementById("loading");
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+    <script src="js/custom.js"></script>
+
+  <script src="swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+
+  </body>
+</html>
