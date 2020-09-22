@@ -342,7 +342,7 @@ body {
   color: var(--pink) !important;
 }
 #experience .exp-title {
-  color: var(--purple);
+  color: var(--head);
   font-size: 40px;
 }
 .exp-title span {
@@ -357,7 +357,7 @@ body {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  background: #6f42c1;
+  background: var(--head);
   margin: 15px 10px;
 }
 .circle .comp {
@@ -419,7 +419,8 @@ hr {
 }
 .copyright {
   text-align: center;
-  color: #fff;
+  color: rgba(219, 217, 217, 0.801);
+  font-size: 20px;
   margin: 0px !important;
 }
 .card {
